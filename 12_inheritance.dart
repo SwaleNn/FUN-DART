@@ -13,7 +13,7 @@ class ParentClass {
 
 class ChildClass extends ParentClass {
   // Deklarasi variabel 'data' yang sama dengan ParentClass. Ini akan menyebabkan error karena 'data' di ParentClass sudah final.
-  final String data; 
+  final String data;
 
   // Konstruktor ChildClass. 'super(data)' memanggil konstruktor ParentClass untuk menginisialisasi variabel 'data' yang diwarisi.
   ChildClass(this.data) : super(data);
@@ -41,6 +41,15 @@ class ChildClassTwo extends ParentClass {
 
   // Metode 'printData' untuk mencetak nilai 'data' yang diwarisi dari ParentClass
   void printData() {
-    print("Data: $data"); 
+    print("Data: $data");
+  }
+}
+
+class Polymorphism extends ParentClass {
+  Polymorphism(String data) : super(data);
+
+  @override
+  void printClass() {
+    print("hello ini adalah class baru");
   }
 }

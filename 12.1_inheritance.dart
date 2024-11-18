@@ -5,6 +5,7 @@ void main() {
   var test2 = ChildClass("Justin");
   var test3 = Heheclass("Haha", 12);
   var test4 = ChildClassTwo("elgo");
+  var test5 = Polymorphism("Ini class ke lima");
 
   print(test1);
   print(test1.data);
@@ -22,4 +23,8 @@ void main() {
   print(test4);
   print(test4.data);
   test4.printClass();
+
+  print(test5);
+  print(test5.data);
+  test5.printClass();
 }
